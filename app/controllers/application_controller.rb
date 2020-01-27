@@ -1,3 +1,5 @@
+require './config/environment'
+
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -8,4 +10,11 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+  # get "/new/?" do 
+  #   erb :new
+  # end
+  
+
+
 end
